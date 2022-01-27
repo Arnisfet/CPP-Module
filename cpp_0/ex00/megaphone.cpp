@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 
 int main(int ac, char **argv)
 {
@@ -12,7 +13,7 @@ int main(int ac, char **argv)
     {
         for (int i = 1; i < ac; i++)
         {
-          len = argv[i].length();
+          len = strlen(argv[i]);
           for (int j = 0; j < len; j++)
               cout << (char) (toupper(argv[i][j]));
           cout << " ";
