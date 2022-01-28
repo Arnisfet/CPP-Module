@@ -13,12 +13,28 @@
 class Telephone
 {
 private:
-
+	Contact contacts;
+	int amount;
 public:
-	telephone();
+	Telephone();
+	void	add_contact(void);
+};
 
-void	show_start(void);
-void	add_contact(void);
+class Contact {
+private:
+	int index;
+	static std::string fields_name[11];
+	static std::string information[11];
+
+	enum strokes{
+		FirstName = 0,
+		LastName,
+		Nickname,
+		Number,
+		Secret
+	};
+public:
+
 };
 
 #endif //CPP_0_HEADER_HPP
