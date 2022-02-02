@@ -18,5 +18,6 @@ Telephone::Telephone()
 
 void Telephone::add_contact(void)
 {
-	this->contacts[this->amount].
+	this->contacts[this->amount].set_information(this->amount + 1);
+	this->amount++;
 }

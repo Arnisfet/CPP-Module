@@ -9,16 +9,7 @@
 # include <iostream>
 # include <iomanip>
 # include <string>
-
-class Telephone
-{
-private:
-	Contact contacts;
-	int amount;
-public:
-	Telephone();
-	void	add_contact(void);
-};
+# include <cstring>
 
 class Contact {
 private:
@@ -34,7 +25,17 @@ private:
 		Secret
 	};
 public:
+	bool set_information(int index);
+};
 
+class Telephone
+{
+private:
+	Contact contacts[11];
+	int amount;
+public:
+	Telephone();
+	void	add_contact(void);
 };
 
 #endif //CPP_0_HEADER_HPP
