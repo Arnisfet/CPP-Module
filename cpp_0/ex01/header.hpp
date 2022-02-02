@@ -15,7 +15,7 @@ class Contact {
 private:
 	int index;
 	static std::string fields_name[11];
-	static std::string information[11];
+	std::string information[11];
 
 	enum strokes{
 		FirstName = 0,
@@ -26,6 +26,8 @@ private:
 	};
 public:
 	bool set_information(int index);
+	void display_header();
+	void display();
 };
 
 class Telephone
@@ -36,6 +38,8 @@ private:
 public:
 	Telephone();
 	void	add_contact(void);
+	void	search_contact(void);
+	void	search_header(void);
 };
 
 #endif //CPP_0_HEADER_HPP

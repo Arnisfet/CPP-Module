@@ -13,21 +13,21 @@ int main(void)
 	Telephone teleph;
 
 	run = 1;
-//	while (run)
-//	{
-//		cout << "> ";
-//		std::getline(cin, first);
-//		if (first == "ADD")
-//		{
-//
-//		}
-//		else if (first == "SEARCH")
-//		{
-//
-//		}
-//		else if (first == "EXIT")
-//		{
-//
-//		}
-//	}
+	while (run)
+	{
+		std::cout << "> ";
+		std::getline(std::cin, first);
+		if (first == "ADD")
+		{
+			teleph.add_contact();
+		}
+		else if (first == "SEARCH")
+		{
+			teleph.search_contact();
+		}
+		else if (first == "EXIT")
+		{
+
+		}
+	}
 }

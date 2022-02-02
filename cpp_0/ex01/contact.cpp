@@ -2,6 +2,7 @@
 
 std::string Contact::fields_name[11] = {
 		"First Name",
+		"LastName",
 		"Nickname",
 		"Phone",
 		"Darkest Secret"
@@ -10,22 +11,40 @@ std::string Contact::fields_name[11] = {
 Contact Contact()
 {}
 
+void Contact::display_header()
+{
+	std::cout << "|" << std::setw(10) << this->index;
+	for (int i = FirstName; i < Number; i++)
+	{
+		std::cout << "|";
+		if (this->information[i].length() > 10)
+			std::cout << this->information[i].substr(0, 9) << ".";
+		else
+			std::cout << std::setw(10) << this->information[i];
+	}
+	std::cout << "|" << std::endl;
+}
+
+void Contact::display()
+{
+
+}
+
 bool Contact::set_information(int index)
 {
-	int length = 0;
+	int line  = 0;
 
 	this->index = index;
 	for (int i = FirstName; i < Secret; i++)
 	{
 		std::cout << "# " << Contact::fields_name[i] << ":\n+";
 		std::getline(std::cin, this->information[i]);
-	}
-	for (int i = FirstName; i < Secret; i++)
-		length += this->information[i].length();
-	if (length == 0)
-	{
-		std::cout << "# Empty contact not added !" << std::endl;
-		return (false);
+		line = this->information[i].length();
+		if (line == 0)
+		{
+			std::cout << "Line is empty! Please try again!"<< std::endl;
+			i--;
+		}
 	}
 	std::cout << "# Contact added !" << std::endl;
 	return (true);
