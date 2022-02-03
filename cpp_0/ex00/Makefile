@@ -10,7 +10,7 @@ NAME			= megaphone
 all:			$(NAME)
 
 $(NAME):		$(OBJS)
-				$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
+				$(CXX) $(CXXFLAGS) -std=c++98 -o $(NAME) $(OBJS)
 
 clean:
 				$(RM) $(OBJS)

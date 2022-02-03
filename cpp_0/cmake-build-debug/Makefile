@@ -129,77 +129,53 @@ cpp_0/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_0.dir/build.make CMakeFiles/cpp_0.dir/build
 .PHONY : cpp_0/fast
 
-ex01/contact.o: ex01/contact.cpp.o
-.PHONY : ex01/contact.o
+ex02/Account.o: ex02/Account.cpp.o
+.PHONY : ex02/Account.o
 
 # target to build an object file
-ex01/contact.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_0.dir/build.make CMakeFiles/cpp_0.dir/ex01/contact.cpp.o
-.PHONY : ex01/contact.cpp.o
+ex02/Account.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_0.dir/build.make CMakeFiles/cpp_0.dir/ex02/Account.cpp.o
+.PHONY : ex02/Account.cpp.o
 
-ex01/contact.i: ex01/contact.cpp.i
-.PHONY : ex01/contact.i
+ex02/Account.i: ex02/Account.cpp.i
+.PHONY : ex02/Account.i
 
 # target to preprocess a source file
-ex01/contact.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_0.dir/build.make CMakeFiles/cpp_0.dir/ex01/contact.cpp.i
-.PHONY : ex01/contact.cpp.i
+ex02/Account.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_0.dir/build.make CMakeFiles/cpp_0.dir/ex02/Account.cpp.i
+.PHONY : ex02/Account.cpp.i
 
-ex01/contact.s: ex01/contact.cpp.s
-.PHONY : ex01/contact.s
+ex02/Account.s: ex02/Account.cpp.s
+.PHONY : ex02/Account.s
 
 # target to generate assembly for a file
-ex01/contact.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_0.dir/build.make CMakeFiles/cpp_0.dir/ex01/contact.cpp.s
-.PHONY : ex01/contact.cpp.s
+ex02/Account.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_0.dir/build.make CMakeFiles/cpp_0.dir/ex02/Account.cpp.s
+.PHONY : ex02/Account.cpp.s
 
-ex01/main.o: ex01/main.cpp.o
-.PHONY : ex01/main.o
+ex02/tests.o: ex02/tests.cpp.o
+.PHONY : ex02/tests.o
 
 # target to build an object file
-ex01/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_0.dir/build.make CMakeFiles/cpp_0.dir/ex01/main.cpp.o
-.PHONY : ex01/main.cpp.o
+ex02/tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_0.dir/build.make CMakeFiles/cpp_0.dir/ex02/tests.cpp.o
+.PHONY : ex02/tests.cpp.o
 
-ex01/main.i: ex01/main.cpp.i
-.PHONY : ex01/main.i
-
-# target to preprocess a source file
-ex01/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_0.dir/build.make CMakeFiles/cpp_0.dir/ex01/main.cpp.i
-.PHONY : ex01/main.cpp.i
-
-ex01/main.s: ex01/main.cpp.s
-.PHONY : ex01/main.s
-
-# target to generate assembly for a file
-ex01/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_0.dir/build.make CMakeFiles/cpp_0.dir/ex01/main.cpp.s
-.PHONY : ex01/main.cpp.s
-
-ex01/telephone.o: ex01/telephone.cpp.o
-.PHONY : ex01/telephone.o
-
-# target to build an object file
-ex01/telephone.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_0.dir/build.make CMakeFiles/cpp_0.dir/ex01/telephone.cpp.o
-.PHONY : ex01/telephone.cpp.o
-
-ex01/telephone.i: ex01/telephone.cpp.i
-.PHONY : ex01/telephone.i
+ex02/tests.i: ex02/tests.cpp.i
+.PHONY : ex02/tests.i
 
 # target to preprocess a source file
-ex01/telephone.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_0.dir/build.make CMakeFiles/cpp_0.dir/ex01/telephone.cpp.i
-.PHONY : ex01/telephone.cpp.i
+ex02/tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_0.dir/build.make CMakeFiles/cpp_0.dir/ex02/tests.cpp.i
+.PHONY : ex02/tests.cpp.i
 
-ex01/telephone.s: ex01/telephone.cpp.s
-.PHONY : ex01/telephone.s
+ex02/tests.s: ex02/tests.cpp.s
+.PHONY : ex02/tests.s
 
 # target to generate assembly for a file
-ex01/telephone.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_0.dir/build.make CMakeFiles/cpp_0.dir/ex01/telephone.cpp.s
-.PHONY : ex01/telephone.cpp.s
+ex02/tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_0.dir/build.make CMakeFiles/cpp_0.dir/ex02/tests.cpp.s
+.PHONY : ex02/tests.cpp.s
 
 # Help Target
 help:
@@ -210,15 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cpp_0"
-	@echo "... ex01/contact.o"
-	@echo "... ex01/contact.i"
-	@echo "... ex01/contact.s"
-	@echo "... ex01/main.o"
-	@echo "... ex01/main.i"
-	@echo "... ex01/main.s"
-	@echo "... ex01/telephone.o"
-	@echo "... ex01/telephone.i"
-	@echo "... ex01/telephone.s"
+	@echo "... ex02/Account.o"
+	@echo "... ex02/Account.i"
+	@echo "... ex02/Account.s"
+	@echo "... ex02/tests.o"
+	@echo "... ex02/tests.i"
+	@echo "... ex02/tests.s"
 .PHONY : help
 
 

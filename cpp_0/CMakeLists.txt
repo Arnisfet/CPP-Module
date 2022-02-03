@@ -6,7 +6,6 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(ex01)
 
 add_executable(cpp_0
-        ex01/header.hpp
-        ex01/main.cpp
-        ex01/telephone.cpp
-        ex01/contact.cpp)
+        ex02/Account.cpp
+        ex02/Account.hpp
+        ex02/tests.cpp)

@@ -84,16 +84,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/contact.cpp">
+		<Unit filename="/home/arnisfet/Desktop/CPP-Module/cpp_0/ex02/Account.cpp">
 			<Option target="cpp_0"/>
 		</Unit>
-		<Unit filename="/home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/header.hpp">
+		<Unit filename="/home/arnisfet/Desktop/CPP-Module/cpp_0/ex02/Account.hpp">
 			<Option target="cpp_0"/>
 		</Unit>
-		<Unit filename="/home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/main.cpp">
-			<Option target="cpp_0"/>
-		</Unit>
-		<Unit filename="/home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/telephone.cpp">
+		<Unit filename="/home/arnisfet/Desktop/CPP-Module/cpp_0/ex02/tests.cpp">
 			<Option target="cpp_0"/>
 		</Unit>
 		<Unit filename="/home/arnisfet/Desktop/CPP-Module/cpp_0/CMakeLists.txt">

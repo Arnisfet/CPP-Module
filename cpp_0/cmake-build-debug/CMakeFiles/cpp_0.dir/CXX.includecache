@@ -6,21 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/header.hpp
+/home/arnisfet/Desktop/CPP-Module/cpp_0/ex02/Account.cpp
 iostream
 -
 iomanip
 -
-string
+chrono
 -
-cstring
+Account.hpp
+/home/arnisfet/Desktop/CPP-Module/cpp_0/ex02/Account.hpp
+
+/home/arnisfet/Desktop/CPP-Module/cpp_0/ex02/Account.hpp
+
+/home/arnisfet/Desktop/CPP-Module/cpp_0/ex02/tests.cpp
+vector
 -
-
-/home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/main.cpp
-header.hpp
-/home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/header.hpp
-
-/home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/telephone.cpp
-header.hpp
-/home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/header.hpp
+algorithm
+-
+functional
+-
+Account.hpp
+/home/arnisfet/Desktop/CPP-Module/cpp_0/ex02/Account.hpp
 

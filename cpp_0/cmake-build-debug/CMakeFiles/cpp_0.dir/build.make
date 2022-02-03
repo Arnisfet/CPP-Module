@@ -66,60 +66,45 @@ include CMakeFiles/cpp_0.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cpp_0.dir/flags.make
 
-CMakeFiles/cpp_0.dir/ex01/main.cpp.o: CMakeFiles/cpp_0.dir/flags.make
-CMakeFiles/cpp_0.dir/ex01/main.cpp.o: ../ex01/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arnisfet/Desktop/CPP-Module/cpp_0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpp_0.dir/ex01/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_0.dir/ex01/main.cpp.o -c /home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/main.cpp
+CMakeFiles/cpp_0.dir/ex02/Account.cpp.o: CMakeFiles/cpp_0.dir/flags.make
+CMakeFiles/cpp_0.dir/ex02/Account.cpp.o: ../ex02/Account.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arnisfet/Desktop/CPP-Module/cpp_0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpp_0.dir/ex02/Account.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_0.dir/ex02/Account.cpp.o -c /home/arnisfet/Desktop/CPP-Module/cpp_0/ex02/Account.cpp
 
-CMakeFiles/cpp_0.dir/ex01/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_0.dir/ex01/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/main.cpp > CMakeFiles/cpp_0.dir/ex01/main.cpp.i
+CMakeFiles/cpp_0.dir/ex02/Account.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_0.dir/ex02/Account.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arnisfet/Desktop/CPP-Module/cpp_0/ex02/Account.cpp > CMakeFiles/cpp_0.dir/ex02/Account.cpp.i
 
-CMakeFiles/cpp_0.dir/ex01/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_0.dir/ex01/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/main.cpp -o CMakeFiles/cpp_0.dir/ex01/main.cpp.s
+CMakeFiles/cpp_0.dir/ex02/Account.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_0.dir/ex02/Account.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arnisfet/Desktop/CPP-Module/cpp_0/ex02/Account.cpp -o CMakeFiles/cpp_0.dir/ex02/Account.cpp.s
 
-CMakeFiles/cpp_0.dir/ex01/telephone.cpp.o: CMakeFiles/cpp_0.dir/flags.make
-CMakeFiles/cpp_0.dir/ex01/telephone.cpp.o: ../ex01/telephone.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arnisfet/Desktop/CPP-Module/cpp_0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpp_0.dir/ex01/telephone.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_0.dir/ex01/telephone.cpp.o -c /home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/telephone.cpp
+CMakeFiles/cpp_0.dir/ex02/tests.cpp.o: CMakeFiles/cpp_0.dir/flags.make
+CMakeFiles/cpp_0.dir/ex02/tests.cpp.o: ../ex02/tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arnisfet/Desktop/CPP-Module/cpp_0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpp_0.dir/ex02/tests.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_0.dir/ex02/tests.cpp.o -c /home/arnisfet/Desktop/CPP-Module/cpp_0/ex02/tests.cpp
 
-CMakeFiles/cpp_0.dir/ex01/telephone.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_0.dir/ex01/telephone.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/telephone.cpp > CMakeFiles/cpp_0.dir/ex01/telephone.cpp.i
+CMakeFiles/cpp_0.dir/ex02/tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_0.dir/ex02/tests.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arnisfet/Desktop/CPP-Module/cpp_0/ex02/tests.cpp > CMakeFiles/cpp_0.dir/ex02/tests.cpp.i
 
-CMakeFiles/cpp_0.dir/ex01/telephone.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_0.dir/ex01/telephone.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/telephone.cpp -o CMakeFiles/cpp_0.dir/ex01/telephone.cpp.s
-
-CMakeFiles/cpp_0.dir/ex01/contact.cpp.o: CMakeFiles/cpp_0.dir/flags.make
-CMakeFiles/cpp_0.dir/ex01/contact.cpp.o: ../ex01/contact.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/arnisfet/Desktop/CPP-Module/cpp_0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cpp_0.dir/ex01/contact.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cpp_0.dir/ex01/contact.cpp.o -c /home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/contact.cpp
-
-CMakeFiles/cpp_0.dir/ex01/contact.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_0.dir/ex01/contact.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/contact.cpp > CMakeFiles/cpp_0.dir/ex01/contact.cpp.i
-
-CMakeFiles/cpp_0.dir/ex01/contact.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_0.dir/ex01/contact.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/contact.cpp -o CMakeFiles/cpp_0.dir/ex01/contact.cpp.s
+CMakeFiles/cpp_0.dir/ex02/tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_0.dir/ex02/tests.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/arnisfet/Desktop/CPP-Module/cpp_0/ex02/tests.cpp -o CMakeFiles/cpp_0.dir/ex02/tests.cpp.s
 
 # Object files for target cpp_0
 cpp_0_OBJECTS = \
-"CMakeFiles/cpp_0.dir/ex01/main.cpp.o" \
-"CMakeFiles/cpp_0.dir/ex01/telephone.cpp.o" \
-"CMakeFiles/cpp_0.dir/ex01/contact.cpp.o"
+"CMakeFiles/cpp_0.dir/ex02/Account.cpp.o" \
+"CMakeFiles/cpp_0.dir/ex02/tests.cpp.o"
 
 # External object files for target cpp_0
 cpp_0_EXTERNAL_OBJECTS =
 
-cpp_0: CMakeFiles/cpp_0.dir/ex01/main.cpp.o
-cpp_0: CMakeFiles/cpp_0.dir/ex01/telephone.cpp.o
-cpp_0: CMakeFiles/cpp_0.dir/ex01/contact.cpp.o
+cpp_0: CMakeFiles/cpp_0.dir/ex02/Account.cpp.o
+cpp_0: CMakeFiles/cpp_0.dir/ex02/tests.cpp.o
 cpp_0: CMakeFiles/cpp_0.dir/build.make
 cpp_0: CMakeFiles/cpp_0.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/arnisfet/Desktop/CPP-Module/cpp_0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable cpp_0"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/arnisfet/Desktop/CPP-Module/cpp_0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable cpp_0"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpp_0.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

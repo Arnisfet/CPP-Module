@@ -8,9 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/contact.cpp" "/home/arnisfet/Desktop/CPP-Module/cpp_0/cmake-build-debug/CMakeFiles/cpp_0.dir/ex01/contact.cpp.o"
-  "/home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/main.cpp" "/home/arnisfet/Desktop/CPP-Module/cpp_0/cmake-build-debug/CMakeFiles/cpp_0.dir/ex01/main.cpp.o"
-  "/home/arnisfet/Desktop/CPP-Module/cpp_0/ex01/telephone.cpp" "/home/arnisfet/Desktop/CPP-Module/cpp_0/cmake-build-debug/CMakeFiles/cpp_0.dir/ex01/telephone.cpp.o"
+  "/home/arnisfet/Desktop/CPP-Module/cpp_0/ex02/Account.cpp" "/home/arnisfet/Desktop/CPP-Module/cpp_0/cmake-build-debug/CMakeFiles/cpp_0.dir/ex02/Account.cpp.o"
+  "/home/arnisfet/Desktop/CPP-Module/cpp_0/ex02/tests.cpp" "/home/arnisfet/Desktop/CPP-Module/cpp_0/cmake-build-debug/CMakeFiles/cpp_0.dir/ex02/tests.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
