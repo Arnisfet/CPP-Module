@@ -14,6 +14,8 @@ Telephone::Telephone()
 	std::cout << "██║     ██║  ██║╚██████╔╝██║ ╚████║███████╗██████╔╝╚██████╔╝╚██████╔╝██║  ██╗" << std::endl;
 	std::cout << "╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝╚═════╝  ╚═════╝  ╚═════╝ ╚═╝  ╚═╝" << std::endl;
 	this->amount = 0;
+	std::cout << std::endl;
+	std::cout << "Active commands: \"ADD\" \"SEARCH\" \"EXIT\"" << std::endl;
 }
 
 void Telephone::add_contact(void)

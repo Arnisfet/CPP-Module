@@ -4,8 +4,6 @@
 
 #include "header.hpp"
 
-
-
 int main(void)
 {
 	int run;
@@ -18,16 +16,13 @@ int main(void)
 		std::cout << "> ";
 		std::getline(std::cin, first);
 		if (first == "ADD")
-		{
 			teleph.add_contact();
-		}
 		else if (first == "SEARCH")
-		{
 			teleph.search_contact();
-		}
 		else if (first == "EXIT")
 		{
-
+			run = false;
+			std::cout << "Bye." << std::endl;
 		}
 	}
 }

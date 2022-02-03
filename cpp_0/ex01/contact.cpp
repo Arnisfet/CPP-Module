@@ -25,9 +25,14 @@ void Contact::display_header()
 	std::cout << "|" << std::endl;
 }
 
-void Contact::display()
+void Contact::display(void)
 {
-
+	std::cout << "# Contact [" << this->index << "]" << std::endl;
+	for (int i = FirstName; i <= Secret; i++)
+	{
+		std::cout << Contact::fields_name[i] << ": ";
+		std::cout << this->information[i] << std::endl;
+	}
 }
 
 bool Contact::set_information(int index)
@@ -35,7 +40,7 @@ bool Contact::set_information(int index)
 	int line  = 0;
 
 	this->index = index;
-	for (int i = FirstName; i < Secret; i++)
+	for (int i = FirstName; i < Secret + 1; i++)
 	{
 		std::cout << "# " << Contact::fields_name[i] << ":\n+";
 		std::getline(std::cin, this->information[i]);

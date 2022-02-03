@@ -16,11 +16,7 @@
 # define COMPILER_VERSION_MINOR DEC(__COMO_VERSION__ % 100)
 
 #elif defined(__INTEL_COMPILER) || defined(__ICC)
-# define COMPILER_ID "Intel"
-# if defined(_MSC_VER)
-#  define SIMULATE_ID "MSVC"
-# endif
-# if defined(__GNUC__)
+# define COMPILER_ID "Inte/*   Updated: 2022/02/03 17:48:39 by mrudge           ###   ########.fr       */UC__)
 #  define SIMULATE_ID "GNU"
 # endif
   /* __INTEL_COMPILER = VRP prior to 2021, and then VVVV for 2021 and later,
