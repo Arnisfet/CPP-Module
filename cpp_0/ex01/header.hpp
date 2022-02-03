@@ -14,8 +14,8 @@
 class Contact {
 private:
 	int index;
-	static std::string fields_name[11];
-	std::string information[11];
+	static std::string fields_name[8];
+	std::string information[8];
 
 	enum strokes{
 		FirstName = 0,

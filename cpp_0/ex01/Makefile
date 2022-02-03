@@ -10,7 +10,7 @@ NAME			= directory
 all:			$(NAME)
 
 $(NAME):		$(OBJS)
-				$(CXX) $(CXXFLAGS) -g -o $(NAME) $(OBJS)
+				$(CXX) $(CXXFLAGS) -std=c++98 -g -o $(NAME) $(OBJS)
 
 clean:
 				$(RM) $(OBJS)

@@ -1,15 +1,12 @@
 #include "header.hpp"
 
-std::string Contact::fields_name[11] = {
+std::string Contact::fields_name[8] = {
 		"First Name",
 		"LastName",
 		"Nickname",
 		"Phone",
 		"Darkest Secret"
 };
-
-Contact Contact()
-{}
 
 void Contact::display_header()
 {

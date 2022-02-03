@@ -20,7 +20,10 @@ Telephone::Telephone()
 
 void Telephone::add_contact(void)
 {
-	this->contacts[this->amount].set_information(this->amount + 1);
+	if (this->amount > 7)
+		this->contacts[this->amount - 8].set_information(this->amount + 1 - 8);
+	else
+		this->contacts[this->amount].set_information(this->amount + 1);
 	this->amount++;
 }
 
@@ -31,7 +34,11 @@ void Telephone::search_header(void)
 		std::cout << "|     Index|First Name| Last Name|  Nickname|" << std::endl;
 		std::cout << "|-------------------------------------------|" << std::endl;
 		for (int i = 0; i < this->amount; i++)
+		{
+			if (i > 7)
+				continue ;
 			this->contacts[i].display_header();
+		}
 		std::cout << "|-------------------------------------------|" << std::endl;
 	}
 }
@@ -46,12 +53,13 @@ void Telephone::search_contact(void)
 		search_header();
 		std::cout << "Enter the index for searching contact" << std::endl;
 		std::cin >> index;
-		if (index <= 0 || index > this->amount)
+		if (index <= 0 || index > this->amount || std::isdigit(index) != 0)
 		{
 			std::cin.clear();
 			std::cout << "Invalid contact's index" << std::endl;
-			return ;
+			std::cin.ignore();
 		}
-		this->contacts[index - 1]. display();
+		else
+			this->contacts[index - 1].display();
 	}
 }
