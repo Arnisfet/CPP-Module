@@ -6,7 +6,6 @@
 
 Zombie::Zombie()
 {
-	std::cout << "Zombie's constructor" << std::endl;
 }
 
 void Zombie::announce()

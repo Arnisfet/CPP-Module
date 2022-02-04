@@ -14,4 +14,6 @@ int main()
 	z2->announce();
 
 	randomChamp("Nigan");
+
+	delete z2;
 }
