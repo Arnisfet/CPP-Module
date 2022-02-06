@@ -28,3 +28,13 @@ void Karen::error()
 {
 	std::cout << "ERROR: " << "This is unacceptable, I want to speak to the manager now." << std::endl;
 }
+
+void Karen::complain(std::string level)
+{
+	std::string functions[] = { std::string("debug"), std::string("info"),
+								std::string("warning"), std::string("error") };
+	CALL_MEMBER_FUNC actionsPool[] = { &Karen::debug, &Karen::info, &Karen::warning, &Karen::error };
+	for (int i = 0; i<4; ++i)
+		if (level == functions[i])
+			(this->*actionsPool[i])();
+}
