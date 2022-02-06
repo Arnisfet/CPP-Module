@@ -5,14 +5,23 @@
 #ifndef EX03_WEAPON_HPP
 #define EX03_WEAPON_HPP
 
-class Weapon
-{
-private:
-	std::string type;
+#include <iostream>
+
+
+class Weapon {
+
 public:
+
 	Weapon();
+	explicit Weapon(std::string const & type);
+	~Weapon();
+
 	std::string const &getType() const;
-	void setType(std::string tmpType);
+	void setType(const std::string &type);
+
+private:
+
+	std::string _type;
 };
 
 #endif //EX03_WEAPON_HPP

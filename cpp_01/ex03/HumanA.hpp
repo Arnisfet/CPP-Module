@@ -7,14 +7,20 @@
 
 #include "Weapon.hpp"
 
-class HumanA
-{
-private:
-	Weapon weapon;
-	std::string name;
+
+class HumanA {
 public:
-	HumanA();
-	attack();
+
+	HumanA(std::string const &name, Weapon &weapon);
+	~HumanA();
+
+	void attack();
+
+private:
+
+	Weapon &_weapon;
+	std::string _name;
 };
+
 
 #endif //EX03_HUMANA_HPP

@@ -4,8 +4,12 @@
 
 #include "HumanA.hpp"
 
-HumanA::HumanA()
-{
-	std::cout << "HumanA's constructor has called!" << std::endl;
+HumanA::~HumanA() {
+	std::cout << "HumanA's destructor has been called!" << std::endl;
 }
 
+void HumanA::attack() {
+	std::cout << _name << " attacks with his " << _weapon.getType() << std::endl;
+}
+
+HumanA::HumanA(std::string const & nameRef, Weapon &weaponRef) :  _weapon(weaponRef), _name(nameRef) {}
