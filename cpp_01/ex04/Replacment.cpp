@@ -17,7 +17,7 @@ Replace::Replace(const std::string &name, const std::string &s1, const std::stri
 void Replace::swap()
 {
 	std::string line, stream;
-	std::ifstream read(_filename);
+	std::ifstream read(_filename.c_str());
 	std::ofstream ofs;
 
 	if (!read)
@@ -30,7 +30,7 @@ void Replace::swap()
 		checkLine(line);
 		stream.append(line);
 	}
-	ofs.open(_filename.append(".replace"), std::ios::out);
+	ofs.open(_filename.append(".replace").c_str(), std::ios::out);
 	if (!ofs)
 	{
 		std::cerr << "File couldn't oppenning or reading!" << std::endl;
