@@ -14,9 +14,9 @@ int main()
 	N = 6;
 	z = zombieHorde(N, NAME);
 	if (!z)
-		return (EXIT_FAILURE);
+		return (1);
 	for (int i = 0; i < N; i++)
 		z[i].announce();
 	delete[] z;
-	return (EXIT_SUCCESS);
+	return (0);
 }

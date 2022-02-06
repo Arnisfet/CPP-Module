@@ -1,16 +1,17 @@
-SRCS			=   main.cpp
+SRCS			=   main.cpp Replacment.cpp
+
 OBJS			= $(SRCS:.cpp=.o)
 
-CXX				= clang++
+CXX				= c++
 RM				= rm -f
-CXXFLAGS		= -Wall -Werror -Wextra -I. -std=c++98
+CXXFLAGS		= -Wall -Werror -Wextra -I.
 
-NAME			= HiThisIsBrain
+NAME			= Replace
 
 all:			$(NAME)
 
 $(NAME):		$(OBJS)
-				$(CXX) $(CXXFLAGS) -g -o $(NAME) $(OBJS)
+				$(CXX) $(CXXFLAGS) -std=c++98 -g -o $(NAME) $(OBJS)
 
 clean:
 				$(RM) $(OBJS)

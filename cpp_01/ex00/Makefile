@@ -3,14 +3,14 @@ OBJS			= $(SRCS:.cpp=.o)
 
 CXX				= clang++
 RM				= rm -f
-CXXFLAGS		= -Wall -Werror -Wextra -I.
+CXXFLAGS		= -Wall -Werror -Wextra -I. -std=c++98
 
 NAME			= zombies
 
 all:			$(NAME)
 
 $(NAME):		$(OBJS)
-				$(CXX) $(CXXFLAGS) -std=c++98 -g -o $(NAME) $(OBJS)
+				$(CXX) $(CXXFLAGS) -g -o $(NAME) $(OBJS)
 
 clean:
 				$(RM) $(OBJS)
