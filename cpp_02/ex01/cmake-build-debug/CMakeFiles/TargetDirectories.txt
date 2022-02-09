@@ -1,3 +1,0 @@
-C:/Users/Vkoliukh/Desktop/CPP-Module/cpp_02/ex01/cmake-build-debug/CMakeFiles/ex01.dir
-C:/Users/Vkoliukh/Desktop/CPP-Module/cpp_02/ex01/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Vkoliukh/Desktop/CPP-Module/cpp_02/ex01/cmake-build-debug/CMakeFiles/rebuild_cache.dir
