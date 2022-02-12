@@ -14,6 +14,9 @@ Replace::Replace(const std::string &name, const std::string &s1, const std::stri
 	std::cout << "Initialise of values!" << std::endl;
 }
 
+Replace::~Replace()
+{}
+
 void Replace::swap()
 {
 	std::string line, stream;

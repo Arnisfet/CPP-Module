@@ -11,7 +11,7 @@ int main()
 	Zombie *z;
 
 	NAME = "Zombie";
-	N = 6;
+	N = 3;
 	z = zombieHorde(N, NAME);
 	if (!z)
 		return (1);

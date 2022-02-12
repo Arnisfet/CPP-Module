@@ -6,6 +6,7 @@
 
 Zombie::Zombie()
 {
+	std::cout << "Constructor!\n";
 }
 
 void Zombie::announce()
@@ -16,4 +17,9 @@ void Zombie::announce()
 Zombie::Zombie(std::string name)
 {
 	(void)name;
+}
+
+Zombie::~Zombie()
+{
+	std::cout << "Destructor!\n";
 }

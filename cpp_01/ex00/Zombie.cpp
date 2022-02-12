@@ -9,12 +9,17 @@ Zombie::Zombie()
 	std::cout << "Zombie's constructor" << std::endl;
 }
 
+Zombie::~Zombie()
+{
+	std::cout << "Zombie's destructor" << std::endl;
+}
+
 void Zombie::announce()
 {
-	std::cout << "BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout << _name << " :BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
 Zombie::Zombie(std::string name)
 {
-	(void)name;
+	_name = name;
 }

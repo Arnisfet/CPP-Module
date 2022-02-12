@@ -12,6 +12,7 @@ class Karen {
 public:
 
 	Karen();
+	~Karen();
 	void complain( std::string level );
 	int getLevel(std::string level);
 

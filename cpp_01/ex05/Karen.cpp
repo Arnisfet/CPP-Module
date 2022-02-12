@@ -9,6 +9,11 @@ Karen::Karen()
 	std::cout << "Crybaby Karen was born!" << std::endl;
 }
 
+Karen::~Karen()
+{
+	std::cout << "Crybaby Karen lost!" << std::endl;
+}
+
 void Karen::debug()
 {
 	std::cout << "DEBUG: " << "I love to get extra bacon for my 7XL-double-cheese-triple-pickle-special-ketchup burger. I just love it!" << std::endl;

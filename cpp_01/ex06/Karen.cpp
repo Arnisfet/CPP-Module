@@ -2,9 +2,13 @@
 
 Karen::Karen() {}
 
+Karen::~Karen()
+{
+};
+
 void Karen::debug( void )
 {
-	std::cout << "[ DEBUG ]" << "I love to get extra bacon for my "
+	std::cout << "[ DEBUG ]\n" << "I love to get extra bacon for my "
 								"7XL-double-cheese-triple-pickle-special"
 								"-ketchup burger.\nI just love it!\n" <<
 								std::endl;
@@ -12,7 +16,7 @@ void Karen::debug( void )
 
 void Karen::info( void )
 {
-	std::cout << "[ INFO ]" << "I cannot believe adding extra bacon cost more"
+	std::cout << "[ INFO ]\n" << "I cannot believe adding extra bacon cost more"
 							   " money. You don’t put enough!\nIf you did I "
 							   "would not have to ask for it!\n" << std::endl;
 }

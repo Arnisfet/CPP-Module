@@ -1,7 +1,7 @@
 SRCS			=   main.cpp
 OBJS			= $(SRCS:.cpp=.o)
 
-CXX				= clang++
+CXX				= c++
 RM				= rm -f
 CXXFLAGS		= -Wall -Werror -Wextra -I. -std=c++98
 

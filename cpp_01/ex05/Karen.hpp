@@ -16,6 +16,7 @@ private:
 	void error();
 public:
 	Karen();
+	~Karen();
 	typedef void (Karen::*CALL_MEMBER_FUNC)();
 	void complain(std::string level);
 };

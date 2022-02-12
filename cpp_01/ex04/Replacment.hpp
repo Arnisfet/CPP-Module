@@ -15,6 +15,7 @@ class Replace {
 public:
 
 	Replace(const std::string &filename, const std::string &s1, const std::string & s2);
+	~Replace();
 	void swap();
 	void checkLine(std::string &line);
 
