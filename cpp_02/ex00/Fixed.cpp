@@ -7,6 +7,7 @@
 Fixed::Fixed()
 {
 	std::cout << "Default constructor called";
+	fixed_point = 0;
 	std::cout << std::endl;
 }
 
@@ -30,7 +31,7 @@ Fixed &Fixed::operator=(const Fixed &other) {
 	return *this;
 }
 
-int Fixed::getRawBits() const {
+int Fixed::getRawBits(void) const {
 	std::cout << "getRawBits member function called" << std::endl;
 	return fixed_point;
 }

@@ -1,6 +1,0 @@
-/app/extra/clion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/arnisfet/Desktop/CPP-Module/cpp_02/ex01
-CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
-  CMake 3.21 or higher is required.  You are running version 3.20.2
-
-
--- Configuring incomplete, errors occurred!

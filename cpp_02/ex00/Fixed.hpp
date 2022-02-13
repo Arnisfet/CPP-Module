@@ -15,8 +15,8 @@ public:
 	~Fixed();
 	Fixed & operator=(const Fixed &other);
 
-	int getRawBits() const;
-	void setRawBits(int raw);
+	int getRawBits(void) const;
+	void setRawBits(int const raw);
 private:
 	int fixed_point;
 	static const int f_bits = 8;

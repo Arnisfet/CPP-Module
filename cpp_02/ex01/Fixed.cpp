@@ -41,17 +41,17 @@ Fixed::Fixed(Fixed const &other) {
 }
 
 Fixed &Fixed::operator=(const Fixed &other) {
-    std::cout << "Assignation operator called" << std::endl;
+    std::cout << "Copy assignment operator called" << std::endl;
     if (this != &other)
         this->fixedPointValue = other.getRawBits();
     return *this;
 }
 
-float Fixed::toFloat() const {
+float Fixed::toFloat(void) const {
     return (float )fixedPointValue / FIXED_POINT_ONE;
 }
 
-int Fixed::toInt() const {
+int Fixed::toInt(void) const {
     return fixedPointValue >> NUM_FRAC_BITS;
 }
 
