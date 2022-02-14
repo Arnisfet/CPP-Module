@@ -2,13 +2,14 @@
 #include "ScavTrap.h"
 
 int main() {
-	std::string name = "Morris";
-	std::string name2 = "Catalina";
-	ClapTrap Morris(name);
-	ScavTrap Catalina(name2);
-	Morris.attack("ZOmbie");
-	Morris.takeDamage(9);
-	Morris.beRepaired(9);
-	Morris.beRepaired(9);
+	ClapTrap Junior("Junior");
+	ScavTrap Catalina("Catalina");
+
+	Catalina.takeDamage(10);
+	Catalina.takeDamage(10);
+	for (int i = 0; i < 10; i++)
+		Catalina.beRepaired(10);
+	for (int i = 0; i < 10; i++)
+		Junior.beRepaired(10);
     return 0;
 }

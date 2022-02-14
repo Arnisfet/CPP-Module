@@ -4,25 +4,51 @@
 
 #include "ScavTrap.h"
 
-ScavTrap::ScavTrap() {
+ScavTrap::ScavTrap()
+{
 	std::cout << "ScavTrap Default constructor called" << std::endl;
 }
 
-ScavTrap::ScavTrap(std::string &name) : ClapTrap(name)
+ScavTrap::ScavTrap(std::string const &name)
 {
 	std::cout << "ScavTrap Default constructor called" << std::endl;
-	_HitPoints =  100;
-	_EnergyPoints = 50;
-	_AttackDamage = 20;
+	this->_name = name;
+	this->_HitPoints =  100;
+	this->_EnergyPoints = 50;
+	this->_AttackDamage = 20;
 }
 
 ScavTrap::~ScavTrap(){
 	std::cout << "ScavTrap destructor called" << std::endl;
 }
 
-ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap(other) {
-	std::cout << "ScavTrap copy constructor called" << std::endl;
-	_HitPoints =  other._HitPoints;
-	_EnergyPoints = other._EnergyPoints;
-	_AttackDamage = other._AttackDamage;
+void ScavTrap::attack(const std::string &target)
+{
+	std::cout << "ScavTrap " << _name << " attacks " << target << " causing "
+	<<	_HitPoints << " points of damage!\n";
+}
+
+void ScavTrap::takeDamage(unsigned int amount)
+{
+	if (_HitPoints <= 0 || _EnergyPoints == 0)
+		return ;
+	_HitPoints -= amount;
+	_EnergyPoints--;
+	std::cout << _name << "> takes damage for "<< amount << " hit points"
+	<< std::endl;
+}
+
+void ScavTrap::beRepaired(unsigned int amount)
+{
+	if (_HitPoints <= 0 || _EnergyPoints == 0)
+		return ;
+	_HitPoints += amount;
+	_EnergyPoints--;
+	std::cout << _name << "> takes hill for "<< amount << " points"
+	<< std::endl;
+}
+
+void	ScavTrap::guardGate()
+{
+	std::cout << "ScavTrap is now in Gate keeper mode" << std::endl;
 }

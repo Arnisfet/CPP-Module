@@ -6,10 +6,10 @@
 
 ClapTrap::ClapTrap()
 {
-	std::cout << "Standart constructor\n";
+	std::cout << "ClapTrap constructor\n";
 }
 
-ClapTrap::ClapTrap(std::string &name)
+ClapTrap::ClapTrap(std::string const &name)
 {
 	std::cout << "Name constructor called\n";
 	_name = name;
@@ -20,13 +20,14 @@ ClapTrap::ClapTrap(std::string &name)
 
 ClapTrap::~ClapTrap()
 {
-	std::cout << "Standart destructor\n";
+	std::cout << "ClapTrap destructor\n";
 }
 
 void ClapTrap::attack(const std::string &target)
 {
 	std::cout << "ClapTrap " << _name << " attacks " << target << " causing "
 	<<	_HitPoints << " points of damage!\n";
+
 }
 
 void ClapTrap::takeDamage(unsigned int amount)
