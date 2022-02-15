@@ -1,4 +1,4 @@
-SRCS			=   main.cpp ClapTrap.cpp
+SRCS			=   main.cpp Animal.cpp Dog.cpp Cat.cpp
 OBJS			= $(SRCS:.cpp=.o)
 
 CXX				= c++
