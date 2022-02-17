@@ -7,6 +7,7 @@
 Cat::Cat()
 {
 	std::cout << "Default cat constructor\n";
+	this->brain = new Brain();
 	_type = "Cat";
 }
 
@@ -19,6 +20,7 @@ Cat::Cat(const Cat &other) : Animal()
 Cat::~Cat()
 {
 	std::cout << "Default cat destructor\n";
+	delete this->brain;
 }
 
 Cat &Cat::operator=(const Cat other)
@@ -34,4 +36,8 @@ Cat &Cat::operator=(const Cat other)
 void Cat::makeSound() const
 {
 	std::cout << "Meow!!\n";
+}
+
+Brain *Cat::getBrain(void) const{
+	return (this->brain);
 }

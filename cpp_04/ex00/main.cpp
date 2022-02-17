@@ -15,5 +15,13 @@ int main()
 	i->makeSound();//will output the cat sound!
 	j->makeSound();
 	meta->makeSound();
+	delete j;
+	delete meta;
+	delete i;
+
+	const WrongAnimal *ptr = new WrongCat();
+	std::cout << ptr->getType() << " \n";
+	ptr->makeSound(); // will output the dog sound!:))
+	delete ptr;
 	return 0;
 }

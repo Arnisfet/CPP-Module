@@ -1,15 +1,27 @@
-#include "ClapTrap.h"
-#include "ScavTrap.h"
+//
+// Created by arnisfet on 15.02.2022.
+//
+#include "Animal.h"
+#include "Cat.h"
+#include "Dog.h"
 
-int main() {
-	ClapTrap Junior("Junior");
-	ScavTrap Catalina("Catalina");
+int main()
+{
+	const Animal* meta = new Animal();
+	const Animal* j = new Dog();
+	const Animal* i = new Cat();
+	std::cout << j->getType() << " " << std::endl;
+	std::cout << i->getType() << " " << std::endl;
+	i->makeSound();//will output the cat sound!
+	j->makeSound();
+	meta->makeSound();
+	delete j;
+	delete meta;
+	delete i;
 
-	Catalina.takeDamage(10);
-	Catalina.takeDamage(10);
-	for (int i = 0; i < 10; i++)
-		Catalina.beRepaired(10);
-	for (int i = 0; i < 10; i++)
-		Junior.beRepaired(10);
-    return 0;
+	const WrongAnimal *ptr = new WrongCat();
+	std::cout << ptr->getType() << " \n";
+	ptr->makeSound(); // will output the dog sound!:))
+	delete ptr;
+	return 0;
 }

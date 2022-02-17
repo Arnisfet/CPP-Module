@@ -5,6 +5,7 @@
 #ifndef EX00_CAT_H
 #define EX00_CAT_H
 
+#include "Brain.h"
 #include "Animal.h"
 class Cat : public Animal
 {
@@ -14,6 +15,10 @@ public:
 	Cat(const Cat &other);
 	Cat &operator=(const Cat other);
 	void makeSound() const;
+
+	Brain *getBrain(void) const;
+private:
+	Brain *brain;
 };
 
 class WrongCat : public WrongAnimal{

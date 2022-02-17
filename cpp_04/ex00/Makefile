@@ -1,11 +1,11 @@
-SRCS			=   main.cpp Animal.cpp Dog.cpp Cat.cpp
+SRCS			=   main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
 OBJS			= $(SRCS:.cpp=.o)
 
 CXX				= c++
 RM				= rm -f
 CXXFLAGS		= -Wall -Werror -Wextra -I. -std=c++98 -g
 
-NAME			= ClapTrap
+NAME			= Polymorf
 
 all:			$(NAME)
 
