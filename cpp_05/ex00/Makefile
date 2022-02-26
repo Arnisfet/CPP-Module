@@ -1,11 +1,11 @@
-SRCS			=   Bureaucrat.cpp
+SRCS			=   Bureaucrat.cpp main.cpp
 OBJS			= $(SRCS:.cpp=.o)
 
 CXX				= c++
 RM				= rm -f
 CXXFLAGS		= -Wall -Werror -Wextra -I. -std=c++98 -g
 
-NAME			= Polymorf
+NAME			= Bureaucrat
 
 all:			$(NAME)
 
