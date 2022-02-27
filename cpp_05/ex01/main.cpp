@@ -28,12 +28,12 @@ int main()
 	{
 		std::cout<<e.what()<<std::endl;
 	}
-	Bureaucrat bu("bu1", 5);
-	Bureaucrat bu2("bu1", 35);
+	Bureaucrat bu1("bu1", 11);
+	Bureaucrat bu2("bu2", 9);
 	Form fo4(false, "fo4", 10, 30);
 	try
 	{
-		fo4.beSigned(bu);
+		fo4.beSigned(bu2);
 	}
 	catch(std::exception const &e)
 	{
@@ -41,7 +41,7 @@ int main()
 	}
 	try
 	{
-		fo4.beSigned(bu2);
+		fo4.beSigned(bu1);
 	}
 	catch(std::exception const &e)
 	{
