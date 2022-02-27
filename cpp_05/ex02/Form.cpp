@@ -83,8 +83,12 @@ std::ostream &operator<<(std::ostream &os, Form &fo)
 void Form::execute(const Bureaucrat &executor) const
 {
 	if (!this->sign)
-		throw std::string ("Form isn't sign!");
-	else if (executor.getGrade() < this->grade_required_to_execute)
-		throw std::string ("Executor has lower lvl then needed!");
+		throw std::string("Form isn't sign!");
+	else if (executor.getGrade() > this->grade_required_to_execute)
+	{
+		std::cout << executor.getGrade() << std::endl;
+		std::cout << this->grade_required_to_execute << std::endl;
+		throw std::string("Executor has lower lvl then needed!");
+	}
 
 }

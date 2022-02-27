@@ -44,7 +44,7 @@ public:
 	int         get_req_exec_grade() const;
 	void        beSigned(const Bureaucrat &bu);
 	std::string	getTarget() const;
-	void        execute(Bureaucrat const & executor) const;
+	virtual void        execute(Bureaucrat const & executor) const = 0;
 };
 std::ostream &operator<<(std::ostream &os, Form &fo);
 
