@@ -17,8 +17,9 @@ private:
 	const std::string name;
 	const int         grade_required_to_sign;
 	const int         grade_required_to_execute;
+	std::string 		target;
 public:
-	Form(bool si, std::string name, int grs, int gre);
+	Form(bool si, std::string name, int grs, int gre, std::string target);
 	virtual ~Form();
 	Form(const Form &fo);
 	Form &operator=(const Form &fo);
@@ -42,6 +43,8 @@ public:
 	int         get_req_sign_grade() const;
 	int         get_req_exec_grade() const;
 	void        beSigned(const Bureaucrat &bu);
+	std::string	getTarget() const;
+	void        execute(Bureaucrat const & executor) const;
 };
 std::ostream &operator<<(std::ostream &os, Form &fo);
 

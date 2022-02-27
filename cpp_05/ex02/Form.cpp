@@ -4,8 +4,9 @@
 
 #include "Form.h"
 
-	Form::Form(bool si, std::string name, int grs, int gre) : sign(si),
-	name(name), grade_required_to_sign(grs), grade_required_to_execute(gre)
+	Form::Form(bool si, std::string name, int grs, int gre, std::string trg) :
+	sign(si),name(name), grade_required_to_sign(grs), grade_required_to_execute(gre)
+	, target(trg)
 {
 	if (this->grade_required_to_sign < 1 || this->grade_required_to_execute < 1 )
 		throw Form::GradeTooHighException();
@@ -13,7 +14,9 @@
 		throw Form::GradeTooLowException();
 }
 
-	Form::~Form() {}
+	Form::~Form() {
+		std::cout << "Default destructor for Form!\n";
+}
 
 	Form &Form::operator=(const Form &fo)
 {
@@ -61,6 +64,11 @@
 	}
 }
 
+std::string Form::getTarget() const
+{
+	return (target);
+}
+
 std::ostream &operator<<(std::ostream &os, Form &fo)
 {
 	if (fo.getSigned())
@@ -70,4 +78,13 @@ std::ostream &operator<<(std::ostream &os, Form &fo)
 	os << "required to sign " << fo.get_req_sign_grade() <<
 	" required to execute " << fo.get_req_exec_grade() << std::endl;
 	return (os);
+}
+
+void Form::execute(const Bureaucrat &executor) const
+{
+	if (!this->sign)
+		throw std::string ("Form isn't sign!");
+	else if (executor.getGrade() < this->grade_required_to_execute)
+		throw std::string ("Executor has lower lvl then needed!");
+
 }

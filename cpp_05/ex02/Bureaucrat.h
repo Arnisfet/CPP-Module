@@ -7,6 +7,8 @@
 #include <iostream>
 #include <string>
 #include "Form.h"
+#include <fstream>
+#include <sstream>
 class Form;
 
 class Bureaucrat
@@ -28,6 +30,7 @@ public:
 	void decrementGrade();
 	void checkGrade();
 	void signForm(Form &src);
+	void executeForm(Form const & form);
 
 	class GradeTooHighException : public std::exception
 			{

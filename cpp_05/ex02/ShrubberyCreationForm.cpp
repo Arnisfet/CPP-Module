@@ -4,25 +4,26 @@
 
 #include "ShrubberyCreationForm.h"
 
-#include "ShrubberyCreationForm.hpp"
-ShrubberyCreationForm::ShrubberyCreationForm(void)
-{}
-
-ShrubberyCreationForm::ShrubberyCreationForm(std::string type) :
-Form(false, "ShrubberyCreationForm", 145, 137)
+ShrubberyCreationForm::ShrubberyCreationForm(std::string target) :
+Form(false, "ShrubberyCreationForm", 145, 137, target)
 {
-	this->setType(type);
+	std::cout << "Default constructor for ShrubberyCreationForm!\n";
 }
 
 ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm &sh) : Form(sh)
 {
-	this->setType(sh.getType());
+	std::cout << "Default copy constructor for ShrubberyCreationForm!\n";
+
 }
 
-ShrubberyCreationForm::~ShrubberyCreationForm() {}
+ShrubberyCreationForm::~ShrubberyCreationForm() {
+	std::cout << "Default destructor for ShrubberyCreationForm!\n";
+
+}
 
 ShrubberyCreationForm &ShrubberyCreationForm::operator=(const ShrubberyCreationForm &sh)
 {
+	std::cout << "Default assignment operator for ShrubberyCreationForm!\n";
 	if (this == &sh)
 		return (*this);
 	Form::operator=(sh);
@@ -31,26 +32,31 @@ ShrubberyCreationForm &ShrubberyCreationForm::operator=(const ShrubberyCreationF
 
 void ShrubberyCreationForm::execute(Bureaucrat const & executor) const
 {
-	Form::execute(executor); // Add method in form
+	Form::execute(executor);
 	std::ofstream file;
 
-	file.open(std::string(this->getType() + "_shrubbery").c_str(), std::ios::out | std::ios::app);
+	file.open(std::string(this->getTarget() + "_shrubbery").c_str(),
+			  std::ios::out	| std::ios::app);
 	if(file.is_open())
 	{
-		file << "                 # #### ####			" << std::endl;
-		file << "               ### \\/#|### |/####		" << std::endl;
-		file << "              ##\\/#/ \\||/##/_/##/_#	" << std::endl;
-		file << "            ###  \\/###|/ \\/ # ###	" << std::endl;
-		file << "          ##_\\_#\\_\\## | #/###_/_####" << std::endl;
-		file << "         ## #### # \\ #| /  #### ##/##	" << std::endl;
-		file << "          __#_--###`  |{,###---###-~	" << std::endl;
-		file << "                    \\ }{				" << std::endl;
-		file << "                     }}{				" << std::endl;
-		file << "                     }}{				" << std::endl;
-		file << "                     {{}				" << std::endl;
-		file << "               , -=-~{ .-^- _			" << std::endl;
-		file << "                     `}				" << std::endl;
-		file << "                      {				" << std::endl;
+		file << "          .     .  .      +     .      .          ." << std::endl;
+		file << "     .       .      .     #       .           ." << std::endl;
+		file << "        .      .         ###            .      .      ." << std::endl;
+		file << "      .      .   \"#:. .:##\"##:. .:#\"  .      ." << std::endl;
+		file << "          .      . \"####\"###\"####\"  ." << std::endl;
+		file << "       .     \"#:.    .:#\"###\"#:.    .:#\"  .        .       ." << std::endl;
+		file << "  .             \"#########\"#########\"        .        ." << std::endl;
+		file << "        .    \"#:.  \"####\"###\"####\"  .:#\"   .       ." << std::endl;
+		file << "     .     .  \"#######\"\"##\"##\"\"#######\"                  ." << std::endl;
+		file << "                .\"##\"#####\"#####\"##\"           .      ." << std::endl;
+		file << "    .   \"#:. ...  .:##\"###\"###\"##:.  ... .:#\"     ." << std::endl;
+		file << "      .     \"#######\"##\"#####\"##\"#######\"      .     ." << std::endl;
+		file << "    .    .     \"#####\"\"#######\"\"#####\"    .      ." << std::endl;
+		file << "            .     \"     000      \"    .     ." << std::endl;
+		file << "       .         .   .   000     .        .       ." << std::endl;
+		file << ".. .. ..................O000O........................ ...... ..." << std::endl;
 		file.close();
 	}
+	else
+		std::cout << "Problem with ofstream!\n";
 }

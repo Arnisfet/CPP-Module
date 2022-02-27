@@ -12,7 +12,6 @@ class Form;
 class ShrubberyCreationForm : public Form
 		{
 		public:
-			ShrubberyCreationForm(void);
 			ShrubberyCreationForm(std::string type);
 			ShrubberyCreationForm(const ShrubberyCreationForm &sh);
 			~ShrubberyCreationForm(void);
