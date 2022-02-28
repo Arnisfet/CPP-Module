@@ -18,7 +18,7 @@ class Intern
 			virtual ~Intern();
 			Intern &operator=(const Intern& op);
 
-			Form*        makeForm(std::string const & form_name, std::string const & target);
+			Form*        makeForm(std::string form_name, std::string target);
 
 		};
 #endif //EX03_INTERN_H

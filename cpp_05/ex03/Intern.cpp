@@ -4,40 +4,48 @@
 
 #include "Intern.h"
 
-Intern::Intern() {}
+Intern::Intern() {
 
-Intern::Intern(const Intern& copy) { (void)copy; }
+}
 
-Intern::~Intern() {}
+Intern::~Intern() {
 
-Intern & Intern::operator=(const Intern& op)
-{
-	if (this == &op)
-		return (*this);
+}
+
+Intern::Intern(const Intern &other) {
+	*this = other;
+}
+
+Intern &Intern::operator=(const Intern &other) {
+	(void) other;
 	return (*this);
 }
 
-Form*		Intern::makeForm(std::string const & form_name, std::string const & target)
-{
-	Form* rtn;
-	typedef Form* (*func)(std::string const & target);
-	typedef struct { std::string form_name; func func; } FormTypes;
+Form *Intern::makeForm(std::string form_name, std::string target) {
+	Form *forms[3] = {
+			new ShrubberyCreationForm(target),
+			new RobotomyRequestForm(target),
+			new PresidentialPardonForm(target)
+	};
+	std::string form_names_arr[3] = {
+			"shrubbery creation",
+			"robotomy request",
+			"presidential pardon"
+	};
 
-	rtn = NULL;
-	FormTypes	forms[] =
+	for (size_t i = 0; i < 3; i++) {
+		if (form_names_arr[i] == form_name) {
+			std::cout << "Intern has successfully created form [" << forms[i]->getName() << "]\n";
 			{
-			{"presidential pardon", &createPresidentialPardonForm},
-			{"robotomy request", &createRobotomyRequestForm},
-			{"shrubbery creation", &createShrubberyCreationForm}
-			};
-
-	for (int i = 0; i < 3; i++)
-		if (forms[i].form_name == form_name)
-		{
-			rtn = forms[i].func(target);
-			std::cout << "Intern creates " << rtn->getName() << std::endl;
-			return (rtn);
+				for (size_t j = 0; j < 3; j++) {
+					if (j != i)
+						delete forms[j];
+				}
+				return (forms[i]);
+			}
 		}
-	std::cout << "Intern is not able to create the form asked." << std::endl;
-		return (rtn);
+	}
+	std::cout << "Intern can't create form [" << form_name << "] because: "
+												 "Can't find form\n";
+	return (NULL);
 }

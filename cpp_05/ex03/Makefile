@@ -16,7 +16,7 @@ $(NAME):		$(OBJS)
 				$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
 
 clean:
-				$(RM) $(OBJS) $(DEP) Patrick_shrubbery
+				$(RM) $(OBJS) $(DEP) Maison_shrubbery
 
 fclean:			clean
 				$(RM) $(NAME)
