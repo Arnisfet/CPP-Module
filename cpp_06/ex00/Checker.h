@@ -10,6 +10,7 @@
 #include <string>
 #include <iostream>
 #include <cstring>
+#include <cstdlib>
 
 class Checker
 {
@@ -21,11 +22,20 @@ public:
 	~Checker();
 
 	void check_alphanum(std::string line) const;
-	int is_nan(std::string line) const;
-class Alphanumeric : public std::exception
+	int is_nan(const std::string& line) const;
+
+	void outputChar(std::string line) const;
+	void outputInt(std::string line) const;
+	void outputFloat(std::string line) const;
+	void outputDouble(std::string line) const;
+	class Error : public std::exception
 		{
 		public:
-			virtual const char *what() const throw() {return ("Alphanumeric is forbidden!\n");}
+			Error(const char *err_msg) : err_msg(err_msg) {};
+			virtual const char *what() const throw() {return (this->err_msg);}
+
+		private:
+			const char *err_msg;
 		};
 };
 
