@@ -1,4 +1,4 @@
-SRCS			=   main.cpp Bureaucrat.cpp Form.cpp
+SRCS			=   main.cpp
 OBJS			= $(SRCS:.cpp=.o)
 
 CXX				= c++
@@ -7,7 +7,7 @@ CXXFLAGS		= -Wall -Werror -Wextra -I. -std=c++98 -g -MMD
 
 DEP				= $(OBJS:.o=.d)
 
-NAME			= Form
+NAME			= realize
 
 all:			$(NAME)
 

@@ -19,8 +19,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29fcef96-33fa-4d99-a63d-9fc1b50f4f94" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../ex00/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex00/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Forms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bureaucrat.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bureaucrat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Form.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Form.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +69,6 @@
     <property name="settings.editor.selected.configurable" value="build.tools" />
   </component>
   <component name="RunManager" selected="Makefile Application.all">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Polymorf" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ex00" TARGET_NAME="Polymorf" CONFIG_NAME="Polymorf" version="1">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
@@ -91,6 +92,11 @@
     <configuration name="test" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ex00" TARGET_NAME="test" CONFIG_NAME="test" version="1">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
@@ -118,6 +124,7 @@
       <workItem from="1645919527185" duration="1185000" />
       <workItem from="1645955928035" duration="202000" />
       <workItem from="1645956329896" duration="202000" />
+      <workItem from="1646168027313" duration="403000" />
     </task>
     <servers />
   </component>
@@ -134,5 +141,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
