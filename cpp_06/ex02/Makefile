@@ -1,4 +1,4 @@
-SRCS			=   main.cpp Bureaucrat.cpp Form.cpp ShrubberyCreationForm.cpp PresidentialPardonForm.cpp RobotomyRequestForm.cpp
+SRCS			=   main.cpp
 OBJS			= $(SRCS:.cpp=.o)
 
 CXX				= c++
@@ -7,7 +7,7 @@ CXXFLAGS		= -Wall -Werror -Wextra -I. -std=c++98 -g -MMD
 
 DEP				= $(OBJS:.o=.d)
 
-NAME			= ReaquestForms
+NAME			= Dcast
 
 all:			$(NAME)
 

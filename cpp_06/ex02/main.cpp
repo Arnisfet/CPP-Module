@@ -1,41 +1,94 @@
-# include "ShrubberyCreationForm.h"
-# include "RobotomyRequestForm.h"
-# include "PresidentialPardonForm.h"
+#include <iostream>
+#include <cstdlib>
 
-static void testForm(Bureaucrat* bur, Form* form)
+class Base
 {
-	std::cout << std::endl << "Sign & Execute \033[33m" << form->getName() << "\033[0m : " << std::endl;
-	bur->signForm(*form);
-	bur->executeForm(*form);
+public:
+	virtual ~Base();
+};
+
+Base::~Base()
+{
+	std::cout << "Base default destructor\n";
 }
 
-int main()
-{
-	ShrubberyCreationForm* shrub = new ShrubberyCreationForm("Patrick");
-	RobotomyRequestForm* robot = new RobotomyRequestForm("Bob");
-	PresidentialPardonForm* pardon = new PresidentialPardonForm("Pef");
+class A : public Base {
+};
 
-	Bureaucrat* bob = new Bureaucrat("Bob", 1);
-	Bureaucrat* james = new Bureaucrat("James", 1);
-	Bureaucrat* meg = new Bureaucrat("Meg", 1);
+class B : public Base {
+};
 
-	std::cout << "\033[31mNormal\033[0m tests : " << std::endl;
+class C : public Base {
+};
 
-	testForm(bob, shrub);
-	testForm(james, robot);
-	testForm(meg, pardon);
+Base * generate() {
+	if (clock() % 2 == 0) {
+		std::cout << "[Class A] has been generated" << std::endl;
+		return (static_cast<Base*>(new A()));
+	}
+	else if (clock() % 3 == 0) {
+		std::cout << "[Class B] has been generated" << std::endl;
+		return (static_cast<Base*>(new B()));
+	}
+	else
+	{
+		std::cout << "[Class C] has been generated" << std::endl;
+		return (static_cast<Base*>(new C()));
+	}
+}
 
-	std::cout << std::endl << "\033[31mAlreadySigned & ToLow\033[0m tests : " << std::endl;
 
-	testForm(bob, pardon);
+void identify(Base* p) {
 
-	delete shrub;
-	delete robot;
-	delete pardon;
+	if (dynamic_cast<A*>(p))
+		std::cout << "[Class A]" << std::endl;
+	else
+		std::cout << "Not A class" << std::endl;
 
-	delete bob;
-	delete james;
-	delete meg;
+	if (dynamic_cast<B*>(p))
+		std::cout << "[Class B]" << std::endl;
+	else
+		std::cout << "Not B class" << std::endl;
+
+	if (dynamic_cast<C*>(p))
+		std::cout << "[Class C]" << std::endl;
+	else
+		std::cout << "Not C class" << std::endl;
+}
+
+void identify(Base& p) {
+	try {
+		(void)dynamic_cast<A&>(p);
+		std::cout << "[Class A]" << std::endl;
+	}
+	catch (std::exception &e) {
+		std::cout << "Not A class" << std::endl;
+	}
+	try {
+		(void)dynamic_cast<B&>(p);
+		std::cout << "[Class B]" << std::endl;
+	}
+	catch (std::exception &e) {
+		std::cout << "Not B class" << std::endl;
+	}
+	try {
+		(void)dynamic_cast<C&>(p);
+		std::cout << "[Class C]" << std::endl;
+	}
+	catch (std::exception &e) {
+		std::cout << "Not C class" << std::endl;
+	}
+}
+
+int main() {
+	Base* res;
+
+	res = generate();
+	std::cout << std::endl;
+
+	identify(res);
+	std::cout << "--------------------------" << std::endl;
+	identify(*res);
 
 	return (0);
 }
