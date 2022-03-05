@@ -135,7 +135,7 @@ void Checker::outputDouble(std::string line) const
 			if (!std::isdigit(line[1]) && line[1] != 'f' && line[1] != '.' && !std::isdigit(line[0]))
 				throw Error("double: impossible");
 			tmp = static_cast<float>(atof(line.c_str()));
-			std::cout << "float: " << std::fixed << tmp << std::endl;
+			std::cout << "double: " << std::fixed << tmp << std::endl;
 		}
 		catch (std::exception &e)
 		{
