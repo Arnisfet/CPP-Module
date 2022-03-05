@@ -8,6 +8,9 @@
 #include <string>
 #include <exception>
 #include "Bureaucrat.h"
+#include <cstdlib>
+#include <ctime>
+
 class Bureaucrat;
 
 class Form

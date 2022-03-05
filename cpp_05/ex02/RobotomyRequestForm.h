@@ -7,6 +7,8 @@
 
 #include "Form.h"
 #include "Bureaucrat.h"
+#include <cstdlib>
+#include <ctime>
 
 class RobotomyRequestForm : public Form
 {

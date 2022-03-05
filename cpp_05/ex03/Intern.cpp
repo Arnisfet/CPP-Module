@@ -45,7 +45,9 @@ Form *Intern::makeForm(std::string form_name, std::string target) {
 			}
 		}
 	}
+	for (int j = 0; j < 3; j++)
+		delete forms[j];
 	std::cout << "Intern can't create form [" << form_name << "] because: "
-												 "Can't find form\n";
+																  "Can't find form\n";
 	return (NULL);
 }
