@@ -74,7 +74,7 @@ void Checker::outputChar(std::string line) const
 void Checker::outputInt(std::string line) const
 {
 	int tmp;
-	if (line.length() == 1 && std::isprint(line[0]))
+	if (line.length() == 1 && std::isprint(line[0]) && !std::isdigit(line[0]))
 	{
 		tmp = static_cast<int>(line[0]);
 		std::cout << "int: '" << tmp << "'" << std::endl;
@@ -82,7 +82,7 @@ void Checker::outputInt(std::string line) const
 	else
 	{
 		try {
-			if (!std::isdigit(line[1]) && line[1] != 'f' && line[1] != '.')
+			if (!std::isdigit(line[1]) && line[1] != 'f' && line[1] != '.' && !std::isdigit(line[0]))
 				throw Error("int: impossible");
 			tmp = static_cast<int>(atof(line.c_str()));
 			std::cout << "int: " << tmp << std::endl;
@@ -98,7 +98,7 @@ void Checker::outputFloat(std::string line) const
 	float tmp;
 
 	std::cout.precision(1);
-	if (line.length() == 1 && std::isprint(line[0]))
+	if (line.length() == 1 && std::isprint(line[0]) && !std::isdigit(line[0]))
 	{
 		tmp = static_cast<float>(line[0]);
 		std::cout << "float: " << std::fixed << tmp << "f" << std::endl;
@@ -107,7 +107,7 @@ void Checker::outputFloat(std::string line) const
 	{
 		try
 		{
-			if (!std::isdigit(line[1]) && line[1] != 'f' && line[1] != '.')
+			if (!std::isdigit(line[1]) && line[1] != 'f' && line[1] != '.' && !std::isdigit(line[0]))
 				throw Error("float: impossible");
 			tmp = static_cast<float>(atof(line.c_str()));
 			std::cout << "float: " << std::fixed << tmp << "f" << std::endl;
@@ -123,7 +123,7 @@ void Checker::outputDouble(std::string line) const
 {
 	double tmp;
 
-	if (line.length() == 1 && std::isprint(line[0]))
+	if (line.length() == 1 && std::isprint(line[0]) && !std::isdigit(line[0]))
 	{
 		tmp = static_cast<float>(line[0]);
 		std::cout << "double: " << std::fixed << tmp << "f" << std::endl;
@@ -132,7 +132,7 @@ void Checker::outputDouble(std::string line) const
 	{
 		try
 		{
-			if (!std::isdigit(line[1]) && line[1] != 'f' && line[1] != '.')
+			if (!std::isdigit(line[1]) && line[1] != 'f' && line[1] != '.' && !std::isdigit(line[0]))
 				throw Error("double: impossible");
 			tmp = static_cast<float>(atof(line.c_str()));
 			std::cout << "float: " << std::fixed << tmp << std::endl;

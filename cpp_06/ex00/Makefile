@@ -7,7 +7,7 @@ CXXFLAGS		= -Wall -Werror -Wextra -I. -std=c++98 -g -MMD
 
 DEP				= $(OBJS:.o=.d)
 
-NAME			= Bureaucrat
+NAME			= Checker
 
 all:			$(NAME)
 

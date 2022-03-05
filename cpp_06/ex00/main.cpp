@@ -12,10 +12,14 @@ void print_for_fun(std::string line)
 int main(int ac, char **av)
 {
 	Checker check;
-	std::string line = av[1];
 
 	if (ac != 2)
+	{
 		std::cout << "Exit! Wrong number of arguments!\n";
+		return 1;
+	}
+	std::string line = av[1];
+
 	try
 	{
 		check.check_alphanum(line);

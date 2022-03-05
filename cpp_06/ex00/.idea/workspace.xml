@@ -6,10 +6,10 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="ex00" targetName="test" />
-      <config projectName="ex00" targetName="Bureaucrat" />
       <config projectName="ex00" targetName="all" />
       <config projectName="ex00" targetName="re" />
       <config projectName="ex00" targetName="fclean" />
+      <config projectName="ex00" targetName="Checker" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -18,8 +18,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29fcef96-33fa-4d99-a63d-9fc1b50f4f94" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7fdc0820-6feb-41a0-b8f1-7c78271651db" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,10 +64,7 @@
       </map>
     </option>
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="25QpMYsJvlki8d06wynYBTmg9r9" />
+  <component name="ProjectId" id="25yX4zFCu2FXCh6Qeq6ZDAeHrZ8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -80,21 +77,22 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ex01" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RunManager" selected="Makefile Application.all">
-    <configuration name="Bureaucrat" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ex00" TARGET_NAME="Bureaucrat" CONFIG_NAME="Bureaucrat" version="1">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Checker" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ex00" TARGET_NAME="Checker" CONFIG_NAME="Checker" version="1">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration name="all" type="CLionNativeAppRunConfigurationType" PROGRAM_PARAMS="inf" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ex00" TARGET_NAME="all" CONFIG_NAME="all" version="1" RUN_PATH="$PROJECT_DIR$/Bureaucrat">
+    <configuration name="all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ex00" TARGET_NAME="all" CONFIG_NAME="all" version="1" RUN_PATH="$PROJECT_DIR$/Checker">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
       </method>
@@ -124,56 +122,22 @@
       <item itemvalue="Makefile Application.fclean" />
       <item itemvalue="Makefile Application.re" />
       <item itemvalue="Makefile Application.test" />
-      <item itemvalue="Makefile Application.Bureaucrat" />
+      <item itemvalue="Makefile Application.Checker" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="29fcef96-33fa-4d99-a63d-9fc1b50f4f94" name="Changes" comment="" />
-      <created>1645469117780</created>
+      <changelist id="7fdc0820-6feb-41a0-b8f1-7c78271651db" name="Changes" comment="" />
+      <created>1646500112670</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1645469117780</updated>
-      <workItem from="1645469119427" duration="3212000" />
-      <workItem from="1645882714227" duration="1965000" />
-      <workItem from="1645885882692" duration="5047000" />
-      <workItem from="1645955769347" duration="157000" />
-      <workItem from="1646076522708" duration="4521000" />
-      <workItem from="1646161190699" duration="6223000" />
-      <workItem from="1646168017652" duration="8000" />
+      <updated>1646500112670</updated>
+      <workItem from="1646500113959" duration="747000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Checker.cpp</url>
-          <line>99</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Checker.cpp</url>
-          <line>84</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
