@@ -7,7 +7,7 @@ CXXFLAGS		= -Wall -Werror -Wextra -I. -std=c++98 -g -MMD
 
 DEP				= $(OBJS:.o=.d)
 
-NAME			= Dcast
+NAME			= Array
 
 all:			$(NAME)
 
@@ -15,10 +15,10 @@ $(NAME):		$(OBJS)
 				$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
 
 clean:
-				$(RM) $(OBJS) $(DEP) Patrick_shrubbery
+				$(RM) $(OBJS) $(DEP)
 
 fclean:			clean
-				$(RM) $(NAME)
+				$(RM) $(NAME) Array.o Array.d
 
 re:				fclean $(NAME)
 

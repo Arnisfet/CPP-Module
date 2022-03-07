@@ -23,6 +23,7 @@ public:
 
 	void check_alphanum(std::string line) const;
 	int is_nan(const std::string& line) const;
+	void shit_cases(std::string line);
 
 	void outputChar(std::string line) const;
 	void outputInt(std::string line) const;

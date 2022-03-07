@@ -1,94 +1,43 @@
-#include <iostream>
-#include <cstdlib>
+#include "Array.h"
 
-class Base
+
+
+int	main( void )
 {
-public:
-	virtual ~Base();
-};
+	Array<int>			intArray;
+	Array<std::string>	stringArray(10);
+	Array<std::string>	otherStringArray;
 
-Base::~Base()
-{
-	std::cout << "Base default destructor\n";
-}
+	stringArray[0] = "What";
+	stringArray[1] = "a";
+	stringArray[2] = "Good";
+	stringArray[3] = "Day to";
+	stringArray[4] = "Doing great thanks!";
+	stringArray[5] = "You're very welcome";
+	std::cout << "intArray.size() = " << intArray.size() << std::endl;
+	std::cout << "stringArray.size() = " << stringArray.size() << std::endl;
+	otherStringArray = stringArray;
+	otherStringArray[3] = "I'm good, how about you?";
+	std::cout << otherStringArray[3] << std::endl;
+	std::cout << otherStringArray[5] << std::endl;
 
-class A : public Base {
-};
-
-class B : public Base {
-};
-
-class C : public Base {
-};
-
-Base * generate() {
-	if (clock() % 2 == 0) {
-		std::cout << "[Class A] has been generated" << std::endl;
-		return (static_cast<Base*>(new A()));
-	}
-	else if (clock() % 3 == 0) {
-		std::cout << "[Class B] has been generated" << std::endl;
-		return (static_cast<Base*>(new B()));
-	}
-	else
+	try
 	{
-		std::cout << "[Class C] has been generated" << std::endl;
-		return (static_cast<Base*>(new C()));
+		std::cout << stringArray[59] << std::endl;
 	}
-}
-
-
-void identify(Base* p) {
-
-	if (dynamic_cast<A*>(p))
-		std::cout << "[Class A]" << std::endl;
-	else
-		std::cout << "Not A class" << std::endl;
-
-	if (dynamic_cast<B*>(p))
-		std::cout << "[Class B]" << std::endl;
-	else
-		std::cout << "Not B class" << std::endl;
-
-	if (dynamic_cast<C*>(p))
-		std::cout << "[Class C]" << std::endl;
-	else
-		std::cout << "Not C class" << std::endl;
-}
-
-void identify(Base& p) {
-	try {
-		(void)dynamic_cast<A&>(p);
-		std::cout << "[Class A]" << std::endl;
+	catch (std::exception &e)
+	{
+		std::cout << e.what() << std::endl;
 	}
-	catch (std::exception &e) {
-		std::cout << "Not A class" << std::endl;
-	}
-	try {
-		(void)dynamic_cast<B&>(p);
-		std::cout << "[Class B]" << std::endl;
-	}
-	catch (std::exception &e) {
-		std::cout << "Not B class" << std::endl;
-	}
-	try {
-		(void)dynamic_cast<C&>(p);
-		std::cout << "[Class C]" << std::endl;
-	}
-	catch (std::exception &e) {
-		std::cout << "Not C class" << std::endl;
-	}
-}
 
-int main() {
-	Base* res;
+	try
+	{
+		std::cout << stringArray[-3] << std::endl;
+	}
+	catch (std::exception &e)
+	{
+		std::cout << e.what() << std::endl;
+	}
 
-	res = generate();
-	std::cout << std::endl;
-
-	identify(res);
-	std::cout << "--------------------------" << std::endl;
-	identify(*res);
-
-	return (0);
+	return 0;
 }

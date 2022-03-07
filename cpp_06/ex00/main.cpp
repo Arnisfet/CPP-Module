@@ -1,4 +1,4 @@
-
+#include <stdio.h>
 #include "Checker.h"
 
 void print_for_fun(std::string line)
@@ -24,9 +24,13 @@ int main(int ac, char **av)
 	{
 		check.check_alphanum(line);
 		if (check.is_nan(line))
+		{
 			print_for_fun(line);
+			return 0;
+		}
 		else
 		{
+			check.shit_cases(line);
 			check.outputChar(line);
 			check.outputInt(line);
 			check.outputFloat(line);

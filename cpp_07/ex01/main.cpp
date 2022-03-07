@@ -1,27 +1,27 @@
 #include <iostream>
-#include <stdint.h>
-
-typedef struct  s_data {
-	int         num;
-	std::string str;
-}               Data;
-
-uintptr_t   serialize(Data* ptr) {
-	return (reinterpret_cast<uintptr_t>(ptr));
+#include <cstdlib>
+#include "iter.h"
+template<typename T>
+void	display( T &whatever )
+{
+	std::cout << "Variable's value is: " << whatever << std::endl;
 }
 
-Data*       deserialized(uintptr_t raw) {
-	return (reinterpret_cast<Data*>(raw));
+void	setRandomValue( int &number )
+{
+	number = std::rand() % 100;
 }
 
-int     main() {
-	Data data;
-	Data *result;
+int	main( void )
+{
+	std::string	strTable[3];
+	int			*intTable = new int[5];
 
-	data.num = 2142;
-	data.str = "Hello World!\n";
-	result = deserialized(serialize(&data));
-	std::cout << result->str << result->num << std::endl;
-
-	return (0);
+	strTable[0] = "Hi how are you?";
+	strTable[1] = "Fine, and you dear sir?";
+	strTable[2] = "Very fine indeed!";
+	::iter(strTable, 3, &display);
+	for (int i = 0; i < 5; i ++)
+		setRandomValue(intTable[i]);
+	::iter(intTable, 5, &display);
 }

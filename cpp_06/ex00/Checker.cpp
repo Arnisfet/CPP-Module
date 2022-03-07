@@ -18,25 +18,12 @@ Checker::~Checker()
 
 void Checker::check_alphanum(std::string line) const
 {
-	int flag = 0;
-	for (size_t i = 0; i < line.length(); i++)
-	{
-		if (isdigit(line[i]))
-		{
-			if (flag == 0 || flag == 1)
-				flag = 1;
-			else
-				throw Error("Alphanumeric is forbidden!\n");
-		}
-		else if (isprint(line[i]) && line[i] != '.' && line[i] != 'f'
-		&& line[i] != '-' && line[i] != '+')
-		{
-			if (flag == 0 || flag == 2)
-				flag = 2;
-			else
-				throw Error("Alphanumeric is forbidden!\n");
-		}
-	}
+	long long int flag = 0;
+
+	flag = std::atof(line.c_str());
+	if (flag || line[0] == '0' || (std::isprint(line[0]) && !line[1]))
+		return;
+	throw Error("Alphanumeric and strings are forbidden!\n");
 }
 
 int Checker::is_nan(const std::string& line) const
@@ -73,7 +60,7 @@ void Checker::outputChar(std::string line) const
 
 void Checker::outputInt(std::string line) const
 {
-	int tmp;
+	long long int tmp;
 	if (line.length() == 1 && std::isprint(line[0]) && !std::isdigit(line[0]))
 	{
 		tmp = static_cast<int>(line[0]);
@@ -142,4 +129,29 @@ void Checker::outputDouble(std::string line) const
 			std::cout << e.what() << std::endl;
 		}
 	}
+}
+
+void Checker::shit_cases(const std::string line)
+{
+	for (int i = 0; line[i]; i++)
+	{
+		if (line[i] == '.')
+			for (int j = i + 1; line[j]; j++){
+				if (std::isprint(line[j]) && !std::isdigit(line[j]) &&
+				line[j] !='f')
+					throw Error("Good plan, but is also forbidddden");
+			}
+		if (std::isalpha(line[i]) && line[i] != '.')
+			for (int j = i + 1; line[j]; j++)
+			{
+				if (std::isprint(line[j]) || std::isdigit(line[j]))
+					throw Error("Good plan, but is also forbidden");
+			}
+	}
+	if (line[0] == '0')
+		for (int i = 0; line[i]; i++)
+		{
+			if (line[i+1] && (line[i+1] != '0' || line[i] != '\0'))
+				throw Error("Good plan, but this uncorrect number");
+		}
 }
