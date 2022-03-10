@@ -5,11 +5,11 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="ex02" targetName="test" />
-      <config projectName="ex02" targetName="all" />
-      <config projectName="ex02" targetName="fclean" />
-      <config projectName="ex02" targetName="Array" />
-      <config projectName="ex02" targetName="re" />
+      <config projectName="ex00" targetName="test" />
+      <config projectName="ex00" targetName="all" />
+      <config projectName="ex00" targetName="re" />
+      <config projectName="ex00" targetName="fclean" />
+      <config projectName="ex00" targetName="Template" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -19,11 +19,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29fcef96-33fa-4d99-a63d-9fc1b50f4f94" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../ex01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Array.h" beforeDir="false" afterPath="$PROJECT_DIR$/Array.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Array.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/Array.ipp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cpp_07/ex01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../cpp_07/ex01/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cpp_07/ex02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../cpp_07/ex02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cpp_07/ex02/Array.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../cpp_07/ex02/Array.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cpp_07/ex02/Array.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/../../cpp_07/ex02/Array.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cpp_07/ex02/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../cpp_07/ex02/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,14 +47,14 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="ex02" />
+              <option name="name" value="ex00" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="ex02" />
+                <option name="name" value="ex00" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
             </list>
@@ -84,43 +84,43 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../intra-uuid-bb392abf-10af-4374-8512-d445d4d7ac83-4042414-mrudge/ex00" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ex01" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="CLionExternalConfigurable" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RunManager" selected="Makefile Application.all">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Array" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ex02" TARGET_NAME="Array" CONFIG_NAME="Array" version="1">
+    <configuration name="Template" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ex00" TARGET_NAME="Template" CONFIG_NAME="Template" version="1">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration name="all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ex02" TARGET_NAME="all" CONFIG_NAME="all" version="1" RUN_PATH="$PROJECT_DIR$/Dcast">
+    <configuration name="all" type="CLionNativeAppRunConfigurationType" PROGRAM_PARAMS="inf" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ex00" TARGET_NAME="all" CONFIG_NAME="all" version="1" RUN_PATH="$PROJECT_DIR$/Iterator">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration name="fclean" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ex02" TARGET_NAME="fclean" CONFIG_NAME="fclean" version="1">
+    <configuration name="fclean" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ex00" TARGET_NAME="fclean" CONFIG_NAME="fclean" version="1">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration name="re" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ex02" TARGET_NAME="re" CONFIG_NAME="re" version="1">
+    <configuration name="re" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ex00" TARGET_NAME="re" CONFIG_NAME="re" version="1">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ex02" TARGET_NAME="test" CONFIG_NAME="test" version="1">
+    <configuration name="test" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ex00" TARGET_NAME="test" CONFIG_NAME="test" version="1">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
@@ -133,7 +133,7 @@
       <item itemvalue="Makefile Application.fclean" />
       <item itemvalue="Makefile Application.re" />
       <item itemvalue="Makefile Application.test" />
-      <item itemvalue="Makefile Application.Array" />
+      <item itemvalue="Makefile Application.Template" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -146,19 +146,15 @@
       <updated>1645469117780</updated>
       <workItem from="1645469119427" duration="3212000" />
       <workItem from="1645882714227" duration="1965000" />
-      <workItem from="1645885882692" duration="4915000" />
-      <workItem from="1645892110967" duration="2709000" />
-      <workItem from="1645917194999" duration="2028000" />
-      <workItem from="1645919381835" duration="137000" />
-      <workItem from="1645919527185" duration="878000" />
-      <workItem from="1645920714103" duration="1157000" />
-      <workItem from="1645956554401" duration="1643000" />
-      <workItem from="1645958427074" duration="5830000" />
-      <workItem from="1645990381782" duration="55000" />
-      <workItem from="1646334737894" duration="2742000" />
-      <workItem from="1646648919714" duration="616000" />
-      <workItem from="1646653201045" duration="6453000" />
-      <workItem from="1646666605242" duration="2370000" />
+      <workItem from="1645885882692" duration="5047000" />
+      <workItem from="1645955769347" duration="157000" />
+      <workItem from="1646076522708" duration="4521000" />
+      <workItem from="1646161190699" duration="6223000" />
+      <workItem from="1646168017652" duration="8000" />
+      <workItem from="1646340078424" duration="296000" />
+      <workItem from="1646475079793" duration="18000" />
+      <workItem from="1646665932256" duration="312000" />
+      <workItem from="1646748829649" duration="1661000" />
     </task>
     <servers />
   </component>
@@ -176,5 +172,16 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
